@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {
+    background-color: aquamarine;
+    font-family:'Courier New', Courier, monospace
+}
+
+h1 {
+    color: black;
+}
+
+h1#principal {
+    text-align: center;    
+}
+
+h2 {
+    color: blueviolet;
+}
+
+.basico{
+    color: azure;
+    font-weight: bold;
+}
+
+.intermediario{
+    color: coral;
+}
+
+.avancado{
+    color: darkmagenta;
+}
+
+.destaque{
+    background-color: darkslateblue;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproduzindo audio</title>
+</head>
+<body>  
+    <h1>Teste com audio com autoplay e controles</h1>
+    <p>
+        Vamos aprender a reproduzir áudios em HTML5.
+    </p>
+    <audio src="Bleach.mp3" controls autoplay></audio>
+    <h1>Teste com vários formatos</h1>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="Bleach.mp3" type="audio/mpge">
+        <source src="Bleach.ogg" type="audio/ogg">
+        <source src="Bleach.wav " type="audio/ogg">
+        <p>Infelizmente seu navegador é incompativél com formatos de áudios. <a href="Bleach.mp3">Clique aqui para baixar o arquivo</a></p>
+    </audio>
+</body>
+</html>
