@@ -9,7 +9,7 @@
 
 .Hub-Corpo{
     min-height: 100vh;
-    background: url('Imagens/Paisagem.jpg');
+    background: url('Imagens/Paisagem.jpg')no-repeat;
     background-size: 100%;
 }
 .Hub-Corpo-Cabecalho{
