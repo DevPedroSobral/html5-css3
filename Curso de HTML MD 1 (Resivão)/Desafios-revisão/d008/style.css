@@ -9,23 +9,33 @@
 
 .Hub-Corpo{
     min-height: 100vh;
-    background: url('Imagens/Paisagem.jpg')no-repeat;
-    background-size: 100%;
+    background-image: url('Imagens/Paisagem.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .Hub-Corpo-Cabecalho{
     min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+.Hub-Corpo-Cabecalho-Titulo{
+    color: crimson;
+    font-family: 'poppins', sans-serif;
+    font-weight: 800;
+    text-shadow: 0px 7px 53px white;
 }
 .Hub-Corpo-Principal{
     position: relative;
     min-height: 75vh;
 }
-.Hub-Cabecalho-Corpo-Titulo{
-    margin: 50px 0px 50px 0px;
-    font-family: poppins, sans-serif;
-    font-weight: 800;
-}
 .Hub-Corpo-Principal-Paragrafo{
-    font-family: poppins, sans-serif;
+    padding: 2%;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 30px;
 }
@@ -36,26 +46,42 @@
     transform: translate(-50%, -50%);
 }    
 .Hub-Corpo-Principal-Navegacao-Lista{     
-    background: linear-gradient(to bottom, rgb(14, 13, 13), rgb(53, 52, 52));
-    padding: 10px;
+    background: linear-gradient(to bottom, rgba(244, 51, 51, 0.806), rgba(222, 45, 45, 0.543));
     box-shadow: 0px 5px 9px ;
-    max-width: 70vh;
+    padding: 5%;
+    min-width: 30vh;
     border-radius: 94px 5px;
 }
 .Hub-Corpo-Principal-Navegacao-Lista-Item{
-    margin: 5px 0px 5px 0px;
-    font-family: poppins, sans-serif;
-    font-size: 24px;
-    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    font-size: 165%;
+    margin: 5px  5px;
     list-style: none;
+}
+.Hub-Corpo-Principal-Navegacao-Lista-Item-Link{
+    color: cornflowerblue;
+    text-decoration: none;
+    border-radius: 10%;
+    transition-duration: 0.3s;
+
+}
+.Hub-Corpo-Principal-Navegacao-Lista-Item-Link:hover{
+    background-color: rgba(240, 240, 240, 0.291);
 }
 .Hub-Corpo-Rodape{
     background-color: crimson;
     min-height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .Hub-Corpo-Rodape-Paragrafo{
     text-align: center;
-    font-family: poppins, sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: 15px;
     font-weight: 700;
     color: cornflowerblue;
