@@ -1,19 +1,20 @@
 @charset 'UTF-8';
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/*Configurações Globais*/
 *{
     text-decoration: none;
     margin: 0;
     padding: 0;
 }
-
+/*Configurações Do Corpo do Hub*/
 .Hub-Corpo{
-    min-height: 100vh;
     background-image: url('Imagens/Paisagem.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+/*Configurações do Cabeçalho do Hub*/
 .Hub-Corpo-Cabecalho{
     min-height: 20vh;
     display: flex;
@@ -27,6 +28,7 @@
     font-weight: 800;
     text-shadow: 0px 7px 53px white;
 }
+/*Configurações do principal do Hub*/
 .Hub-Corpo-Principal{
     position: relative;
     min-height: 75vh;
@@ -63,7 +65,7 @@
     list-style: none;
 }
 .Hub-Corpo-Principal-Navegacao-Lista-Item-Link{
-    color: cornflowerblue;
+    color: rgb(36, 109, 244);
     text-decoration: none;
     border-radius: 10%;
     transition-duration: 0.3s;
@@ -72,6 +74,7 @@
 .Hub-Corpo-Principal-Navegacao-Lista-Item-Link:hover{
     background-color: rgba(240, 240, 240, 0.291);
 }
+/*Configurações do Rodape do Hub*/
 .Hub-Corpo-Rodape{
     background-color: crimson;
     min-height: 5vh;
@@ -86,3 +89,37 @@
     font-weight: 700;
     color: cornflowerblue;
 }
+/*Configurções do Corpo do Verde*/
+.Verde-Corpo{
+    background-image: url('Imagens/backgroundVerde.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.Verde-Corpo-Cabecalho{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+.Verde-Corpo-Cabecalho-Titulo{
+    color: green;
+    font-size: 32px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 800;
+}
+/*Configurções do Principal do Verde*/
+.Verde-Corpo-Principal{
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Verde-Corpo-Principal-Paragrafo{
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    color: rgb(79, 128, 49);
+}
+/**/
