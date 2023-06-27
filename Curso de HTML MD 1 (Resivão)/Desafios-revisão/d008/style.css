@@ -132,9 +132,7 @@
     border-radius: 5px 94px;
 }
 .Verde-Corpo-Principal-Navegacao-Lista-Item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     font-family: 'poppins', sans-serif;
     font-weight: 500;
     font-size: 165%;
@@ -167,4 +165,77 @@
 }
 .Verde-Corpo-Rodape-Paragrafo:after{
     background-color: #045a04;
+}
+/*Configurações do Corpo do Azul*/   
+.Azul-Corpo{
+    background: url('Imagens/BackGroundAzul.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: Cover;
+}
+.Azul-Corpo-Cabecalho{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+.Azul-Corpo-Cabecalho-Titulo{
+    font-family: 'poppins', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    color: blue;
+    text-shadow: 2px 6px 49px rgba(55, 55, 224, 0.532);
+}
+.Azul-Corpo-Principal{
+    min-height: 75vh;
+}
+.Azul-Corpo-Principal-Paragrafo{
+    text-align: center;
+    padding: 5%;
+    font-size: 23px;
+    font-weight: 700;
+    font-family: 'poppins', sans-serif;
+    color: rgb(0, 0, 113);
+}
+.Azul-Corpo-Principal-Navegacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+.Azul-Corpo-Principal-Navegacao-Lista{
+    list-style: none;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(72, 72, 114, 0.782), rgba(0, 0, 92, 0.919));
+    border-radius: 86px;
+    box-shadow: 2px 4px 6px rgba(86, 85, 85, 0.817);
+    padding: 4vh;
+    font-size: 30px;
+}
+}
+.Azul-Corpo-Principal-Navegacao-Lista-Item{
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+}
+.Azul-Corpo-Principal-Navegacao-Lista-Item-Link{
+    border-radius: 13%;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    color: rgb(177, 189, 238);
+}
+.Azul-Corpo-Principal-Navegacao-Lista-Item-Link:hover{
+    background-color: rgba(94, 94, 210, 0.474);
+}
+.Azul-Corpo-Rodape{
+    min-height: 5vh;
+    background-color: rgb(118, 118, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Azul-Corpo-Rodape-Paragrafo{
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+}
+.Azul-Corpo-Rodape-Paragrafo-Link{
 }
