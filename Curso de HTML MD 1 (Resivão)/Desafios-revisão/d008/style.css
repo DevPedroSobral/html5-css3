@@ -30,7 +30,6 @@
 }
 /*Configurações do principal do Hub*/
 .Hub-Corpo-Principal{
-    position: relative;
     min-height: 75vh;
 }
 .Hub-Corpo-Principal-Paragrafo{
@@ -42,15 +41,14 @@
     margin-bottom: 30px;
 }
 .Hub-Corpo-Principal-Navegacao{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }    
 .Hub-Corpo-Principal-Navegacao-Lista{     
     background: linear-gradient(to bottom, rgba(244, 51, 51, 0.806), rgba(222, 45, 45, 0.543));
     box-shadow: 0px 5px 9px ;
-    padding: 5%;
+    padding: 2%;
     min-width: 30vh;
     border-radius: 94px 5px;
 }
@@ -61,7 +59,7 @@
     font-family: 'poppins', sans-serif;
     font-weight: 500;
     font-size: 165%;
-    margin: 5px  5px;
+    margin: 5px 5px;
     list-style: none;
 }
 .Hub-Corpo-Principal-Navegacao-Lista-Item-Link{
@@ -69,7 +67,6 @@
     text-decoration: none;
     border-radius: 10%;
     transition-duration: 0.3s;
-
 }
 .Hub-Corpo-Principal-Navegacao-Lista-Item-Link:hover{
     background-color: rgba(240, 240, 240, 0.291);
@@ -105,21 +102,69 @@
 }
 .Verde-Corpo-Cabecalho-Titulo{
     color: green;
-    font-size: 32px;
     font-family: 'poppins', sans-serif;
     font-weight: 800;
+    text-shadow: 0px 7px 53px greenyellow;
 }
 /*Configurções do Principal do Verde*/
 .Verde-Corpo-Principal{
     min-height: 75vh;
 }
 .Verde-Corpo-Principal-Paragrafo{
+    padding: 2%;
     text-align: center;
     font-family: 'poppins', sans-serif;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
     color: rgb(79, 128, 49);
 }
 .Verde-Corpo-Principal-Navegacao{
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-/**/
+.Verde-Corpo-Principal-Navegacao-Lista{
+    background: linear-gradient(to bottom, rgba(54, 128, 54, 0.601), rgba(2, 58, 2, 0.584));
+    box-shadow: 2px 6px 2px rgba(0, 0, 0, 0.444);
+    padding: 2%;
+    min-width: 30vh;
+    border-radius: 5px 94px;
+}
+.Verde-Corpo-Principal-Navegacao-Lista-Item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    font-size: 165%;
+    margin: 5px 5px;
+    list-style: none;
+}
+.Verde-Corpo-Principal-Navegacao-Lista-Item-Link{
+    color: rgb(4, 82, 4);
+    text-decoration: none;
+    border-radius: 15%;
+    transition-duration: 0.3s;
+}
+.Verde-Corpo-Principal-Navegacao-Lista-Item-Link:hover{
+    background-color: rgba(44, 124, 47, 0.291);
+}
+/*Configurações de Rodape do Verde*/
+.Verde-Corpo-Rodape{
+    background-color: greenyellow;
+    min-height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Verde-Corpo-Rodape-Paragrafo{
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #0b670b;
+}
+.Verde-Corpo-Rodape-Paragrafo:after{
+    background-color: #045a04;
+}
