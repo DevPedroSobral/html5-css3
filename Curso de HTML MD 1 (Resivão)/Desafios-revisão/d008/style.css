@@ -23,7 +23,7 @@
     backdrop-filter: blur(10px);
 }
 .Hub-Corpo-Cabecalho-Titulo{
-    color: crimson;
+    color: rgb(141, 138, 139);
     font-family: 'poppins', sans-serif;
     font-weight: 800;
     text-shadow: 0px 7px 53px white;
@@ -46,7 +46,7 @@
     justify-content: center;
 }    
 .Hub-Corpo-Principal-Navegacao-Lista{     
-    background: linear-gradient(to bottom, rgba(244, 51, 51, 0.806), rgba(222, 45, 45, 0.543));
+    background: linear-gradient(to bottom, rgba(243, 158, 158, 0.806), rgba(90, 46, 212, 0.543));
     box-shadow: 0px 5px 9px ;
     padding: 2%;
     min-width: 30vh;
@@ -73,7 +73,7 @@
 }
 /*Configurações do Rodape do Hub*/
 .Hub-Corpo-Rodape{
-    background-color: crimson;
+    background-color: rgb(99, 99, 99);
     min-height: 5vh;
     display: flex;
     justify-content: center;
@@ -93,6 +93,7 @@
     background-size: cover;
     background-position: center;
 }
+/*Configurações do Cabeçalho do Verde*/
 .Verde-Corpo-Cabecalho{
     min-height: 20vh;
     display: flex;
@@ -173,6 +174,7 @@
     background-repeat: no-repeat;
     background-size: Cover;
 }
+/*Configurações do Cabeçalho do Azul*/
 .Azul-Corpo-Cabecalho{
     min-height: 20vh;
     display: flex;
@@ -187,6 +189,7 @@
     color: blue;
     text-shadow: 2px 6px 49px rgba(55, 55, 224, 0.532);
 }
+/*Configurações do Principal do Azul*/
 .Azul-Corpo-Principal{
     min-height: 75vh;
 }
@@ -212,7 +215,6 @@
     padding: 4vh;
     font-size: 30px;
 }
-}
 .Azul-Corpo-Principal-Navegacao-Lista-Item{
     font-family: 'poppins', sans-serif;
     font-weight: 600;
@@ -226,6 +228,7 @@
 .Azul-Corpo-Principal-Navegacao-Lista-Item-Link:hover{
     background-color: rgba(94, 94, 210, 0.474);
 }
+/*Configurações do Rodape do Azul*/
 .Azul-Corpo-Rodape{
     min-height: 5vh;
     background-color: rgb(118, 118, 240);
@@ -238,4 +241,88 @@
     font-weight: 600;
 }
 .Azul-Corpo-Rodape-Paragrafo-Link{
+}
+/*Configurações do Corpo do Vermelho*/ 
+.Vermelho-Corpo{
+    background: url('Imagens/BackGroundRed.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*Configurações do Principal do Vermelho*/
+.Vermelho-Corpo-Cabecalho{
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+.Vermelho-Corpo-Cabecalho-Titulo{
+    font-family: 'poppins', sans-serif;
+    color: rgb(115, 16, 3);
+    text-shadow: 3px 7px 8px;
+}
+/*Configurações do Principal do Vermelho*/
+.Vermelho-Corpo-Principal{
+    min-height: 75vh;
+    display: flex;
+}
+.Vermelho-Corpo-Principal-Paragrafo{
+    text-align: center;
+    font-size: 22px;
+    font-family: 'poppins', sans-serif;
+    padding: 5%;
+}
+.Vermelho-Corpo-Principal-Navegacao{
+}  
+.Vermelho-Corpo-Principal-Secao{
+}
+.Vermelho-Corpo-Principal-Navegacao-Lista{
+}
+.Vermelho-Corpo-Principal-Navegacao-Lista-Item{
+}
+.Vermelho-Corpo-Principal-Navegacao-Lista-Item-Link{
+}
+/*Configurações do Rodape do Vermelho*/
+.Vermelho-Corpo-Rodape{
+    min-height: 5vh;
+    background-color: rgb(179, 59, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Vermelho-Corpo-Rodape-Paragrafo{
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+}
+.Vermelho-Corpo-Rodape-Paragrafo-Link{
+    color: rgb(251, 118, 118);
+}
+/*Configurações do Corpo do Ciano*/ 
+.Ciano-Corpo{
+}
+/*Configurações do Principal do Ciano*/
+.Ciano-Corpo-Cabecalho{
+}
+.Ciano-Corpo-Cabecalho-Titulo{
+}
+/*Configurações do Principal do Ciano*/
+.Ciano-Corpo-Principal{
+}
+.Ciano-Corpo-Principal-Paragrafo{
+}
+.Ciano-Corpo-Principal-Navegacao{
+}
+.Ciano-Corpo-Principal-Navegacao-Lista{
+}
+.Ciano-Corpo-Principal-Navegacao-Lista-Item{
+}
+.Ciano-Corpo-Principal-Navegacao-Lista-Item-Link{
+}
+/*Configurações do Rodape do Ciano*/
+.Ciano-Corpo-Rodape{
+}
+.Ciano-Corpo-Rodape-Paragrafo{
+}
+.Ciano-Corpo-Rodape-Paragrafo-Link{
 }
