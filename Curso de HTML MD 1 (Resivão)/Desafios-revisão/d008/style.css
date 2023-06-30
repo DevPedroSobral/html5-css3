@@ -70,6 +70,8 @@
 }
 .Hub-Corpo-Principal-Navegacao-Lista-Item-Link:hover{
     background-color: rgba(240, 240, 240, 0.291);
+    letter-spacing: 5px;
+   
 }
 /*Configurações do Rodape do Hub*/
 .Hub-Corpo-Rodape{
@@ -266,14 +268,18 @@
 .Vermelho-Corpo-Principal{
     min-height: 75vh;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
-.Vermelho-Corpo-Principal-Paragrafo{
-    text-align: center;
+.Vermelho-Corpo1-Principal-Paragrafo{
     font-size: 22px;
     font-family: 'poppins', sans-serif;
     padding: 5%;
+    align-self: flex-start;
 }
 .Vermelho-Corpo-Principal-Navegacao{
+
 }  
 .Vermelho-Corpo-Principal-Secao{
 }
