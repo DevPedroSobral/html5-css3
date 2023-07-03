@@ -265,25 +265,33 @@
     text-shadow: 3px 7px 8px;
 }
 /*Configurações do Principal do Vermelho*/
-.Vermelho-Corpo-Principal{
-    min-height: 75vh;
+.Vermelho-Corpo1-Principal{
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 .Vermelho-Corpo1-Principal-Paragrafo{
     font-size: 22px;
     font-family: 'poppins', sans-serif;
     padding: 5%;
-    align-self: flex-start;
+}
+.Vermelho-Corpo-Principal{
+    min-height: 54vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .Vermelho-Corpo-Principal-Navegacao{
-
+    box-shadow: 6px 9px 5px rgba(255, 255, 255, 0.206);
+    border-radius: 17%;
+    padding: 2%;
+    background: linear-gradient(to bottom, rgba(225, 53, 53, 0.27), rgba(177, 104, 104, 0.396));
 }  
 .Vermelho-Corpo-Principal-Secao{
 }
 .Vermelho-Corpo-Principal-Navegacao-Lista{
+    list-style-type: none;
+    text-align: center;
 }
 .Vermelho-Corpo-Principal-Navegacao-Lista-Item{
 }
@@ -291,7 +299,7 @@
 }
 /*Configurações do Rodape do Vermelho*/
 .Vermelho-Corpo-Rodape{
-    min-height: 5vh;
+    min-height: 4vh;
     background-color: rgb(179, 59, 59);
     display: flex;
     justify-content: center;
