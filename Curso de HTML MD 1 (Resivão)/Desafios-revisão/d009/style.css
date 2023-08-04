@@ -1,0 +1,29 @@
+/* Estilos gerais e reset de margens e paddings */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Estilos para o header, main e footer */
+header, main, footer {
+    width: 100%;
+    box-sizing: border-box; /* Faz com que a largura inclua padding e borda */
+}
+
+header {
+    background-color: #f1f1f1;
+    height: 100px;
+    backdrop-filter: blur(10px); /* Adiciona o efeito de blur ao header */
+}
+
+main {
+    background-color: #e0e0e0;
+    flex: 1; /* Isso faz com que o main ocupe o espaço restante disponível */
+}
+
+footer {
+    background-color: #f1f1f1;
+    height: 50px;
+}
+
