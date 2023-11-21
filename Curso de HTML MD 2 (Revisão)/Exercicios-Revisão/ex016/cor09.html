@@ -5,45 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-size: 1.2rem;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: none;
+        }
         body{
             display: flex;
-            justify-content: center;
-            text-align: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
         }
         .one{    
-            background-image: linear-gradient(white 30% ,green 30% 50%, white 50% 70%, green 70% );
+            background-image: linear-gradient(white 60px ,green 60px 100px, white 50% 70%, green 70% );
             background-size: cover;
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
             border: 1px solid black;
+            margin: 5px;
         }
         .two{
             background-image: linear-gradient(white, green, white, green);
             background-size: cover;
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
             border: 1px solid black;
+            margin: 5px;
         }
         .tree{
-            background-image: linear-gradient(white 20%, green 30%, white 50%, green 80%);
+            background-image: linear-gradient(#ffffff 20%, green 30%, white 50%, green 80%);
             background-size: cover;
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
             border: 1px solid black;
+            margin: 5px;
         }
         .four{
-            background-image: linear-gradient(red 0% 10% ,white 30%  ,green 50%);
+            background-image: linear-gradient(#ff0000 0% 10% ,white 30%  ,green 50%);
             background-size: cover;
-            height: 300px;
-            width: 300px;
+            height: 200px;
+            width: 200px;
             border: 1px solid black;
+            margin: 5px;
         }
         .five{
             background-image: linear-gradient(rgba(30, 102, 7, 1), rgba(30, 102, 7, 0.2));
             background-size: cover;
-            height: 300px;
-            width: 300px;
+            height: 200px;
+            width: 200px;
             border: 1px solid black;
+            margin: 5px;
+        }
+        .six{
+            background-image: linear-gradient(rgba(245, 179, 3, 0.4), rgba(245, 179, 3, 1));
+            background-size: cover;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            margin: 5px;
+        }
+        .seven{
+            background-color: rosybrown;
+            background-image: linear-gradient(blue, transparent, red);
+            background-size: cover;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            margin: 5px;
+        }
+        .eight{
+            background-image: repeating-linear-gradient(0deg, red , green 10%, red );
+            background-size: cover;
+            height: 200px;
+            width: 200px;
+            border: 1px solid #000;
+            margin: 5px
+        }
+        .nine{
+            background-image: repeating-linear-gradient(#e66465, #e66465 20px, #9198e5 20px, #9198e5 25px);
+            background-size: cover;
+            height: 200px;
+            width: 200px;
+            border: 1px solid #000;
+            margin: 5px;
+        }.ten{
+            background-image: repeating-linear-gradient(45deg, #3f87a6, #ebf8e1 15%, #f69d3c 20%);
+            background-size: cover;
+            height: 200px;
+            width: 200px;
+            border: 1px solid #000;
+            margin: 5px;
+        }
+        .eleven{
+            background-image: repeating-linear-gradient(transparent, #4d9f0c 40px);
+            background-size: cover;
+            height: 200px;
+            width: 200px;
+            border: 1px solid #000;
+            margin: 5px;
         }
     </style>
 </head>
@@ -53,5 +115,11 @@
     <div class="tree">Imagem 3</div>
     <div class="four">Imagem 4</div>
     <div class="five">Imagem 5</div>
+    <div class="six">Imagem 6</div>
+    <div class="seven">Imagem 7</div>
+    <div class="eight">Imagem 8</div>
+    <div class="nine">Imagem 9</div>
+    <div class="ten">Imagem 10</div>
+    <div class="eleven">Imagem 11</div>
 </body>
 </html>
