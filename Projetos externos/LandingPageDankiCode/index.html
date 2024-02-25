@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        html, body{
+            background: radial-gradient(circle  at top right, #34332b 0%, #000 100%);
+            height: 100%;
+            overflow: hidden;
+        }
+        .wraper{
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        header{
+            padding: 20px 0px;
+        }
+        .logo img{
+            width: 120px;
+        }
+        .menu a{
+            margin-right: 10px;
+            font-size: 13px;
+            display: inline-block;
+            border-radius: 6px;
+            border: 1px solid #FCEE21;
+            color: white;
+            text-decoration: none;
+            padding: 10px 8px;
+            text-align: center;
+            width: 130px;
+        }
+        .highlight{
+            background-color: #8a8102;
+            padding: 4px 6px;
+        }
+        .p1 h2{
+            line-height: 70px;
+            font-size: 35px;
+            color: #fff;
+        }
+        .p1 p{
+            color: white;
+            margin: 8px 0;
+        }
+        section.main{
+            margin-top: 100px;
+        }
+        .file-upload{
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border: 1px dashed #FCEE21;
+            color: white;
+            width: 385px;
+            cursor: pointer;
+        }
+        .file-upload p,
+        .file-upload img{
+            vertical-align: middle;
+        }
+        input[type=submit]{
+            border-radius: 6px;
+            background: #FCEE21;
+            color: black;
+            width: 340px;
+            font-weight: bold;
+            border: 0;
+            margin-top: 30px;
+            height: 40px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="wraper">
+            <div class="logo">
+                <a href="#"><img src="https://captionsgenerator.ai/logo.png" alt="logo"></a>
+            </div><!--wraper-->
+            <div class="menu">
+                <a href="#">⭐ Seja Premium</a>
+                <a href="#"><i class="fas fa-user"></i> Acessar Conta</a>
+            </div>
+        </div>
+    </header>
+    
+    <section class="main">
+        <div class="wraper">
+            <div class="p1">
+                <h2>Descubra uma nova forma<br/> de <span class="highlight">legendar</span><br/>seus vídeos 🚀</h2>
+                <br/>
+                <div class="file-upload">
+                    <p><img src="https://captionsgenerator.ai/upload.png" alt=""> Selecione um arquivo</p>
+                </div>
+                <br/>
+                <p>Selecione a cor da legenda </p>
+                <input style="width:100px;display:block;" type="color" name="fonte_color">
+                <br/>
+                <p>Selecione a cor do fundo</p>
+                <input style="width:100px;display:block;" value="#f8fc03" type="color" name="bg_color">
+                <br/>
+                <input type="submit" value="Legendar meu Primeiro Vídeo!">
+                </div>
+                <div class="p2">
+                    <img src="https://captionsgenerator.ai/side.png" alt="vídeos">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
