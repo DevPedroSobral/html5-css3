@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img{
+    border: 1px solid #eee;
+}
+#pedra, #papel , #tesoura{
+    cursor: pointer;
+}
+#botao{
+    background: rgb(119, 245, 119);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+    margin: auto;
+}
+#botao:hover{
+    background-color: rgb(165, 241, 165);
+}
+
+#area-resultado{
+    display: none;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janken-Chii</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Pedra, Papel ou Tesoura</h1>
+    <h2 id="frase">Escolha uma opção:</h2>
+    <div id="area-escolha">
+        <img id="pedra" onclick="select(0)" src="img/pedra.png">
+        <img id="papel" onclick="select(1)" src="img/papel.png">
+        <img id="tesoura" onclick="select(2)" src="img/tesoura.png">
+    </div>
+    <div id="area-resultado">
+        <img id="jogador" src="img/pedra.png">
+        <img id="pc" src="img/pc-papel.png">
+        <br>
+        <button id="botao" onclick="location.reload(true)">Recomeçar</button>
+    </div>
+
+    <script>
+        // elementos básicos do projeto
+        var frase = document.getElementById("frase");
+        var jogador = document.getElementById("jogador");
+        var pc = document.getElementById("pc");
+        var botao = document.getElementById("botao");
+        var areaEscolha = document.getElementById("area-escolha");
+        var areaResultado = document.getElementById("area-resultado");
+
+        // Imagens que usamos no projeto
+        var imagens_jogador = ["img/pedra.png", "img/papel.png", "img/tesoura.png"];
+        var imagens_pc = ["img/pc-pedra.png", "img/pc-papel.png", "img/pc-tesoura.png"];
+
+        // Indice 
+        var index = 2;
+
+        // Função para efeito das imagens
+        function efeitoImagem() {
+            jogador.src = imagens_jogador[index];
+            pc.src = imagens_pc[index];
+
+            index++;
+            if (index === 3) {
+                index = 0;
+            }
+        }
+
+        // Chamada do efeito de escolha
+        var efeito = setInterval(efeitoImagem, 250);
+
+
+        // Função principal de seleção
+        function select(escolhaJogador) {
+            // Esconder área de opções
+            areaEscolha.style.display = 'none';
+
+            // Mostar a area de animação
+            areaResultado.style.display = 'block';
+
+            // Começar contador em 3 
+            frase.textContent = '3';
+
+            // Ativar Cronometro
+            var tempo = setInterval(() => {
+                var cronometro = parseInt(frase.textContent);
+                cronometro--;
+                frase.textContent = cronometro;
+
+                // Para quando chegar em zero
+
+                if(cronometro === 0){
+                    clearInterval(tempo);
+                    clearInterval(efeito);
+                }
+
+            }, 1000);
+
+            // Regras do jogo
+            setTimeout(() => {
+                
+                // Randomizar a escolha do pc
+                var escolhaPC = Math.floor(Math.random() * 3);
+                console.log('Escolha do PC: ' + escolhaPC)
+
+                // Mostrar a escolha do PC
+
+                pc.src = imagens_pc[escolhaPC];
+
+                // Mostrar a esccolhar do jogador 
+
+                jogador.src = imagens_jogador[escolhaJogador];
+
+                // Verificar se foi empate
+                if (escolhaJogador === escolhaPC){
+                    frase.textContent = 'Empatou!';
+                    botao.style.display = 'block';
+                    return false;
+                }
+
+                // verificar vitoria
+                switch(escolhaJogador){
+                    case 0: //Escolheu Pedra
+                    escolhaPC == 2 ? frase.textContent = "Jogador Venceu!" : frase.textContent = "PC Venceu!";
+                    botao.style.display = 'block';
+                    break;
+                    case 1: //esccolheu papel
+                    escolhaPC == 0 ? frase.textContent = "Jogador Venceu!" : frase.textContent = "PC Venceu!";
+                    botao.style.display = 'block';
+                    break;
+                    case 2: //esccolheu tesoura
+                    escolhaPC == 1 ? frase.textContent = "Jogador Venceu!" : frase.textContent = "PC Venceu!";
+                    botao.style.display = 'block';
+                    break;
+                    default:
+                        alert('Escolha Inválida')
+                }
+                
+            }, 3000);
+
+            
+        }
+    </script>
+</body>
+</html>
